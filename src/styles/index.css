@@ -9,12 +9,13 @@
 
 :root {
     --text-dark:    #1F2937;
+    --blue-darkest: #232573;
     --blue-dark:    #4B4FED;
     --blue-primary: #5A67FF;
     --blue-bg:      #6A6FF2;
     --blue-light:   #7B8CFF;
 }
 
-/* h1 {
-    font-family: 'Poppins', sans-serif;
-} */
+html {
+    scroll-behavior: smooth;
+}
