@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    opacity: 0;
+    transition: opacity .3s ease;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: auto;
+    z-index: 9999;
+}
+
+.overlay.active {
+    opacity: 1;
+}
+
+.overlay-content {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+    background-color: white;
+
+    padding: 16px;
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.close-overlay-button {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    
+    padding: 8px 14px;
+    width: min-content;
+
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 1.2em;
+
+    align-self: end;
+
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.title-overlay-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-overlay {
+    font-family: 'Poppins';
+    color: var(--blue-darkest);
+}
+
+.close-overlay-button:hover {
+    background-color: rgb(237, 237, 237);
+}
