@@ -73,7 +73,9 @@ section h2 {
 }
 
 .card-service img {
+    box-shadow: 0 0 6px gray;
     border-radius: inherit;
+
     width: 100%;
     height: inherit;
 }
@@ -103,7 +105,7 @@ section h2 {
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding: 16px 32px;
+    padding: 32px;
 
     display: flex;
     justify-content: center;
@@ -115,7 +117,9 @@ section h2 {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.29);
     background-color: white;
 
-    min-width: 400px;
+    min-width: 200px;
+    width: max-content;
+
     padding: 28px;
 
     display: flex;
@@ -174,16 +178,42 @@ section h2 {
 
 #prices-content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 32px;
+    align-items: flex-start;
+}
+
+#price-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 1 440px;
+}
+
+#prices h3 {
+    font-family: 'Poppins';
+    color: var(--text-dark);
+}
+
+#prices-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1 1 440px;
+}
+
+#calculator-result {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.471);
+    padding: 24px;
+    font-family: 'Poppins';
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
 }
 
 #prices-info {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.57);
-
-    min-width: 440px;
-    padding: 28px;
-
+    padding: 36px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -198,10 +228,7 @@ section h2 {
 #var-price-info {
     background-color: rgba(255, 191, 0, 0.709);
     border-radius: 28px;
-
-    width: 400px;
     padding: 12px;
-
     display: flex;
     align-items: center;
     gap: 16px;
@@ -215,8 +242,48 @@ section h2 {
 #info-icon-container {
     background-color: rgba(255, 166, 0, 0.998);
     border-radius: 50%;
-
     padding: 2px 4px;
-    
     font-size: 1.3em;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-family: sans-serif;
+    color: var(--text-dark);
+}
+
+input {
+    box-shadow: 0 0 3px rgb(148, 148, 148);
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 2px;
+    padding: 16px;
+    transition: all .3s;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(52, 52, 52);
+}
+
+#btnComputePrice {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.24);
+    background-color: var(--blue-darkest);
+    border-radius: 2px;
+    border: none;
+    padding: 16px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: white;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#btnComputePrice:hover {
+    background-color: var(--blue-dark);
+    transform: translateY(-5px);
 }

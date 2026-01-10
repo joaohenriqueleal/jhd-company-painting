@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./src/styles/header.css">
         <link rel="stylesheet" href="./src/styles/index.css">
         <link rel="stylesheet" href="./src/styles/main.css">
+        <link rel="stylesheet" href="./src/styles/faq.css">
         <title>JHD - Pintura e identificação</title>
     </head>
     <body>
@@ -83,7 +84,7 @@
                         <h3>Localidade</h3>
                         <article>
                             <p>
-                                A JHD atua principalmente em
+                                Atuamos principalmente em
                                 <a href="https://www.google.com/maps/@-11.7350068,-49.0858195,40144m/data=!3m1!1e3!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" class="link">
                                     Gurupi-TO <i class="bi bi-paperclip"></i>
                                 </a>
@@ -115,20 +116,70 @@
                     <p>Informações sobre nossos preços de serviço</p>
                 </div>
                 <div id="prices-content">
-                    <div id="prices-info">
-                        <div id="var-price-info">
-                            <div id="info-icon-container">
-                                <i class="bi bi-info"></i>
-                            </div>
-                            <p>Os preços podem variar</p>
+                    <div id="price-calculator">
+                        <h3>Calculadora</h3>
+
+                        <div class="input-container">
+                            <label for="boxesWithWasher">Caixas com anilha:</label>
+                            <input
+                                placeholder="Insira a quantidade"
+                                id="boxesWithWasher"
+                                type="number"
+                                step="1"
+                                min="0"
+                            >
                         </div>
-                        <p>
-                            A JHD costuma cobrar <strong>R$30,00</strong> pela identificação de caixas sem anilha,
-                            <strong>R$35,00</strong> por caixa com anilha, e <strong>R$10,00</strong> reais pela
-                            identificação caixas de correio ou de água (un).
-                        </p>
+
+                        <div class="input-container">
+                            <label for="boxesNoWasher">Caixas sem anilha:</label>
+                            <input
+                                placeholder="Insira a quantidade"
+                                id="boxesNoWasher"
+                                type="number"
+                                step="1"
+                                min="0"
+                            >
+                        </div>
+
+                        <div class="input-container">
+                            <label for="boxesMailWater">Caixas de correio/água:</label>
+                            <input
+                                placeholder="Insira a quantidade"
+                                id="boxesMailWater"
+                                type="number"
+                                step="1"
+                                min="0"
+                            >
+                        </div>
+
+                        <button id="btnComputePrice">Calcular</button>
+                    </div>
+
+                    <div id="prices-side">
+                        <div id="calculator-result">
+                            R$ 0,00
+                        </div>
+
+                        <div id="prices-info">
+                            <div id="var-price-info">
+                                <div id="info-icon-container">
+                                    <i class="bi bi-info"></i>
+                                </div>
+                                <p>Os preços podem variar</p>
+                            </div>
+                            <p>
+                                A JHD costuma cobrar <strong>R$30,00</strong> pela identificação de caixas sem anilha,
+                                <strong>R$35,00</strong> por caixa com anilha, e <strong>R$10,00</strong> reais pela
+                                identificação caixas de correio ou de água (un). Esses preços tendem a variar
+                                bastante, por isso sempre consulte o nosso suporte ao cliente para saber ao certo
+                                o valor da sua identificação. 
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <section id="faq">
+                <h2>FAQ</h2>
             </section>
         </main>
     </body>

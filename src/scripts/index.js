@@ -1,8 +1,28 @@
 "use strict"
 
 
-const cardServices = [...document.getElementsByClassName('card-service')]
+import formatPrice from "./formatPrice.js"
 
+const cardServices = [...document.getElementsByClassName('card-service')]
+const calculatorResult = document.getElementById('calculator-result')
+const btnComputePrice = document.getElementById('btnComputePrice')
+const boxesWithWasher = document.getElementById('boxesWithWasher')
+const boxesMailWater = document.getElementById('boxesMailWater')
+const boxesNoWasher = document.getElementById('boxesNoWasher')
+
+const valuePerMailOrWaterBox = 10
+const valuePerBoxWithWasher = 35
+const valuePerBoxNoWasher = 30
+
+btnComputePrice.addEventListener('click', () => {
+    let serviceValue = 0
+
+    serviceValue += Number(boxesMailWater.value) * valuePerMailOrWaterBox
+    serviceValue += Number(boxesWithWasher.value) * valuePerBoxWithWasher
+    serviceValue +=  Number(boxesNoWasher.value) * valuePerBoxNoWasher
+
+    calculatorResult.innerHTML = formatPrice(serviceValue)
+})
 
 function closeOverlay(overlay) {
     overlay.classList.remove('active')
