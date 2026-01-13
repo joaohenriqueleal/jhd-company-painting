@@ -197,23 +197,25 @@ section h2 {
 
 #prices-side {
     display: flex;
+    height: 100%;
     flex-direction: column;
     gap: 24px;
     flex: 1 1 440px;
 }
 
 #calculator-result {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.271);
-    padding: 20px;
+    box-shadow: 2px 2px 2px rgb(224, 224, 224);
+    border: 1px solid gray;
+
+    padding: 12px;
+
     font-family: 'Poppins';
-    font-size: 1.8em;
-    font-weight: bold;
     text-align: center;
 }
 
 #prices-info {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.37);
-    padding: 31px;
+    height: 100%;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -226,21 +228,25 @@ section h2 {
 }
 
 #var-price-info {
-    background-color: rgba(255, 191, 0, 0.709);
+    background-color: var(--blue-light);
     border-radius: 28px;
+    
     padding: 12px;
+    
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
 #var-price-info p {
-    color: rgba(129, 84, 0, 0.998);
+    color: white;
     font-weight: bolder;
+
+    display: flex;
 }
 
 #info-icon-container {
-    background-color: rgba(255, 166, 0, 0.998);
+    background-color: var(--blue-dark);
     border-radius: 50%;
     padding: 2px 4px;
     font-size: 1.3em;
@@ -261,7 +267,7 @@ input {
     box-shadow: 0 0 3px rgb(148, 148, 148);
     border: 1px solid rgb(148, 148, 148);
     border-radius: 2px;
-    padding: 16px;
+    padding: 12px;
     transition: all .3s;
     outline: none;
 }

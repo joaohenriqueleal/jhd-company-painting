@@ -2,7 +2,72 @@
 
 
 footer {
-    background-color: var(--blue-darkest);
+    background-color: #242424;
     
     padding: 32px;
+}
+
+#footer-content {
+    height: 100%;
+    width: 100%;
+
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+#whatsapp-link {
+    background-color: #25D366;
+    border-radius: 28px;
+    
+    padding: 12px;
+
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#whatsapp-link:hover {
+    background-color: #5bce85;
+}
+
+#instagram-link {
+    background-image: linear-gradient(
+        45deg,
+        #833AB4,
+        #FD1D1D,
+        #F77737,
+        #FCAF45
+    );
+    border-radius: 28px;
+    
+    padding: 12px;
+
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#instagram-link:hover {
+    background-image: linear-gradient(
+        45deg,
+        #aa5cdf,
+        #ff5050,
+        #f99d6f,
+        #ffc677
+    );
 }
