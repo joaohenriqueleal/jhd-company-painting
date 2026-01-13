@@ -203,8 +203,8 @@ section h2 {
 }
 
 #calculator-result {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.471);
-    padding: 24px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.271);
+    padding: 20px;
     font-family: 'Poppins';
     font-size: 1.8em;
     font-weight: bold;
@@ -212,8 +212,8 @@ section h2 {
 }
 
 #prices-info {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.57);
-    padding: 36px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.37);
+    padding: 31px;
     display: flex;
     flex-direction: column;
     gap: 16px;

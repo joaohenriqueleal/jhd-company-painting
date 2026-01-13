@@ -78,3 +78,17 @@ cardServices.forEach((cs) => {
         })
     })
 })
+
+const observer = new IntersectionObserver((entryes) => {
+    entryes.map((entrye) => {
+        if (entrye.isIntersecting) {
+            entrye.target.classList.add('show')
+        } else {
+            entrye.target.classList.remove('show')
+        }
+    })
+})
+
+const hiddens = [...document.querySelectorAll('.hidden')]
+
+hiddens.map((element) => observer.observe(element) )

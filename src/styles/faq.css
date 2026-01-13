@@ -2,5 +2,76 @@
 
 
 #faq {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#faq-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#faq-title p {
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+#faq-content {
+    background-image: url('../assets/imgs/waves-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+details {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.23);
+    background: #f7f7f7;
+
+    font-family: 'Poppins';
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    transition: background 0.3s ease;
+}
+
+details[open] {
+    background: #eaeaea;
+}
+
+summary {
+    padding-right: 20px;
     
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+
+    position: relative;
+}
+
+summary::after {
+    transition: transform 0.3s ease;
+    font-size: 20px;
+
+    position: absolute;
+    right: 0;
+    content: "+";
+}
+
+details[open] summary::after {
+    content: "−";
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+
+    color: var(--text-dark);
+    font-family: sans-serif;
 }

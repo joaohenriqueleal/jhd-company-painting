@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+
+footer {
+    background-color: var(--blue-darkest);
+    
+    padding: 32px;
+}

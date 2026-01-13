@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./src/styles/overlay.css">
         <link rel="stylesheet" href="./src/styles/header.css">
+        <link rel="stylesheet" href="./src/styles/footer.css">
         <link rel="stylesheet" href="./src/styles/index.css">
         <link rel="stylesheet" href="./src/styles/main.css">
         <link rel="stylesheet" href="./src/styles/faq.css">
@@ -41,14 +42,14 @@
                 </nav>
             </div>
             <div id="header-content">
-                <h1>JHD - PINTURA E IDENTIFICAÇÃO</h1>
-                <p>
+                <h1 class="hidden">JHD - PINTURA E IDENTIFICAÇÃO</h1>
+                <p class="hidden">
                     Identifique seu agrupamento elétrico com a JHD. Oferecemos serviços
                     especializados de anilhamento de cabos e pintura externa das caixas,
                     garantindo identificação precisa, acabamento de qualidade e maior
                     durabilidade.
                 </p>
-                <a id="more-infos" href="#about">
+                <a id="more-infos" href="#about" class="hidden">
                     Mais Informações
                 </a>
             </div>
@@ -56,31 +57,31 @@
         <main>
             <section id="services">
                 <div id="services-title">
-                    <h2>Nossos serviços</h2>
-                    <p>Aqui estão alguns de nossos serviços de identificação</p>
+                    <h2 class="hidden">Nossos serviços</h2>
+                    <p class="hidden">Aqui estão alguns de nossos serviços de identificação</p>
                 </div>
                 <div id="services-content">
-                    <div class="card-service">
+                    <div class="card-service hidden">
                         <img src="./src/assets/imgs/services/2.jpg" alt="Serviço 2">
                     </div>
-                    <div class="card-service">
+                    <div class="card-service hidden">
                         <img src="./src/assets/imgs/services/3.jpg" alt="Serviço 3">
                     </div>
-                    <div class="card-service">
+                    <div class="card-service hidden">
                         <img src="./src/assets/imgs/services/5.jpg" alt="Serviço 5">
                     </div>
-                    <div class="card-service">
+                    <div class="card-service hidden">
                         <img src="./src/assets/imgs/services/6.jpeg" alt="Serviço 6">
                     </div>
                 </div>
             </section>
             <section id="about">
                 <div id="about-title">
-                    <h2>Sobre</h2>
-                    <p>Aqui vão algumas informações e curiosidades sobre a JHD</p>
+                    <h2 class="hidden">Sobre</h2>
+                    <p class="hidden">Aqui vão algumas informações e curiosidades sobre a JHD</p>
                 </div>
                 <div id="about-content">
-                    <div class="about-section">
+                    <div class="about-section hidden">
                         <h3>Localidade</h3>
                         <article>
                             <p>
@@ -97,7 +98,7 @@
                             </p>
                         </article>
                     </div>
-                    <div class="about-section">
+                    <div class="about-section hidden">
                         <h3>Fundação</h3>
                         <article>
                             <p>
@@ -112,11 +113,11 @@
             </section>
             <section id="prices">
                 <div id="prices-title">
-                    <h2>Preços</h2>
-                    <p>Informações sobre nossos preços de serviço</p>
+                    <h2 class="hidden">Preços</h2>
+                    <p class="hidden">Informações sobre nossos preços de serviço</p>
                 </div>
                 <div id="prices-content">
-                    <div id="price-calculator">
+                    <div id="price-calculator" class="hidden">
                         <h3>Calculadora</h3>
 
                         <div class="input-container">
@@ -156,11 +157,11 @@
                     </div>
 
                     <div id="prices-side">
-                        <div id="calculator-result">
+                        <div id="calculator-result" class="hidden">
                             R$ 0,00
                         </div>
 
-                        <div id="prices-info">
+                        <div id="prices-info" class="hidden">
                             <div id="var-price-info">
                                 <div id="info-icon-container">
                                     <i class="bi bi-info"></i>
@@ -179,9 +180,41 @@
                 </div>
             </section>
             <section id="faq">
-                <h2>FAQ</h2>
+                <div id="faq-title">
+                    <h2 class="hidden">FAQ</h2>
+                    <p class="hidden">Perguntas frequentes</p>
+                </div>
+                <div id="faq-content">
+                    <details class="hidden">
+                        <summary>
+                            Pra que serve esse serviço?
+                        </summary>
+                        <p>
+                            O serviço de identificação oferecido pela JHD <strong>tem como objetivo
+                            facilitar a identificação e garantir maior clareza e organização.</strong>
+                            Por exemplo: em uma manutenção na rede elétrica de um prédio, apenas alguns
+                            apartamentos podem ser afetados. Como saber exatamente qual caixa corresponde
+                            a cada domicílio?  
+                            Com as identificações da JHD, esse processo se torna simples, rápido e confiável.
+                        </p>
+                    </details>
+                    <details class="hidden">
+                        <summary>
+                            Esse serviço é obrigatório?
+                        </summary>
+                        <p>
+                            O serviço de identificação oferecido pela JHD <strong>é obrigatório</strong>
+                            para a aprovação do projeto por parte da comphania elétrica. A falta de
+                            identificação no seu projeto pode acarretar não só em dor de cabeça em
+                            manutenções, como também na reprova do mesmo.
+                        </p>
+                    </details>
+                </div>
             </section>
         </main>
+        <footer>
+
+        </footer>
     </body>
     <script type="module" src="./src/scripts/index.js"></script>
 </html>
